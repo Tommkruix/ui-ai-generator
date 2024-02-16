@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: #fff;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: #374151;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: #374151;
+    --background-start-rgb: #fff;
+    --background-end-rgb: #fff;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+
+
+.typing-animation {
+  display: inline-block;
+  animation: typing 1s infinite;
+}
+
+.ball {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #6E6E7F;
+  margin-right: 5px;
+}
+
+.ball:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.ball:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.ball:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+
+@keyframes typing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.display-linebreak {
+  white-space: pre-wrap;
+}
