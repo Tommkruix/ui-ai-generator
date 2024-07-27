@@ -2,6 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+.env:
+NEXT_PUBLIC_API_URL=<http://127.0.0.1:7401>
+
 First, run the development server:
 
 ```bash
